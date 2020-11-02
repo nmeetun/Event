@@ -1,0 +1,71 @@
+<div class="price">
+    <p>What is the pricing?</p>
+
+    
+    <div class="toggle">
+        <mat-button-toggle-group #togglePrice = "matButtonToggleGroup">
+            <mat-button-toggle value="free">Free</mat-button-toggle>
+            <mat-button-toggle value="paid">Paid</mat-button-toggle>
+        </mat-button-toggle-group>
+    </div><br>
+    
+
+    <div class="pricing">
+        How many different pricing?<br>
+    <div class="increment">
+        <button type="button" (click)="minus()"><i class="fa fa-minus">-</i></button>
+        <input type="text" [value]="quantity">
+        <button type="button" (click)="plus()"><i class="fa fa-plus-square">+</i></button>
+    </div><br><br>
+
+    <table style="width:40%">
+        <tr>
+          <td>Ticket Name</td>
+          <td>Price</td>
+          <td>Currency</td>
+        </tr>
+        <tr>
+          <td><input type="text"></td>
+          <td><input type="text"></td>
+          <td>
+            <mat-form-field>
+                <mat-select>
+                    <mat-option value="Indian Rupees">Indian Rupees</mat-option>
+                    <mat-option value="Euro">Euro</mat-option>
+                    <mat-option value="Dollar">Dollar</mat-option>
+                    <mat-option value="Mauritian Rupees">Mauritian Rupees</mat-option>
+                    <mat-option value="Canadian Dollar">Canadian Dollar</mat-option>
+                </mat-select>
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="text"></td>
+          <td><input type="text"></td>
+          <td>
+            <mat-form-field>
+                <mat-select>
+                    <mat-option value="Indian Rupees">Indian Rupees</mat-option>
+                    <mat-option value="Euro">Euro</mat-option>
+                    <mat-option value="Dollar">Dollar</mat-option>
+                    <mat-option value="Mauritian Rupees">Mauritian Rupees</mat-option>
+                    <mat-option value="Canadian Dollar">Canadian Dollar</mat-option>
+                </mat-select>
+            </mat-form-field>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="card">
+        <p>Which credit cards do you access?</p><br>
+
+        <button *ngFor="let url of cardimageurl"><img src="{{url}}" width="50" height="50"></button>
+
+    </div>
+    
+</div>
+
+
+
+            

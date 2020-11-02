@@ -1,0 +1,19 @@
+<div class="category" [formGroup]="form">
+    <!-- <mat-radio-group aria-label="Select an option">
+        <mat-radio-button ><img src="../../../../assets/images/event-category/music.png" alt="Music" width="50" height="50">Music</mat-radio-button>
+        <mat-radio-button value="2">Food and Drink</mat-radio-button>
+    </mat-radio-group> -->
+    <p class="title">What is the category of your event?</p><br>
+
+    <mat-icon>
+        <button *ngFor="let url of categoryimageurl"><img src="{{url}}" width="50" height="50"  formControlName = "category"></button>
+    </mat-icon><br><br><br><br>
+
+    <div class="subcategories">
+        <p class="subtitle">Select Subcategories</p>
+    
+        <button mat-stroked-button color="primary" *ngFor="let subcategory of subcategories"  formControlName = "subcategory">{{subcategory}}</button>
+
+    </div><br>
+</div>
+

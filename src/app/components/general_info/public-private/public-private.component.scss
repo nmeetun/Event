@@ -1,0 +1,27 @@
+.publicprivate{
+    padding: 0;
+    margin: 0;
+    border: 1px solid grey;
+
+    #text{
+        text-align: center;
+    }
+
+    .togglebutton{
+        color:  rgb(72, 72, 255);
+        padding-left: 45%;
+
+            mat-button-toggle-group{
+                border-radius: 30px;
+
+                mat-button-toggle{
+                    border-radius: 15px;
+                    
+                }
+
+                mat-button-toggle:hover{
+                    background-color: rgb(129, 129, 252);
+                }
+            }
+        }
+    }

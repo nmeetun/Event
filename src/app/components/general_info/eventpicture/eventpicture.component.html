@@ -1,0 +1,9 @@
+<div class="imgevent">
+    <p>Event's Picture</p> <br>
+    <p>Upload main image</p>
+
+    <div class="box">
+        <img [src]="url" height="80px" width="80px"><br>
+        <input type="file" (change)="onselectFile($event)" multiple>
+    </div>
+</div>

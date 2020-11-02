@@ -1,0 +1,25 @@
+.authorities{
+    border: 1px solid grey;
+    text-align: center;
+
+    .toggle{
+        color:  rgb(72, 72, 255);
+
+            mat-button-toggle-group{
+                border-radius: 30px;
+
+                mat-button-toggle{
+                    border-radius: 15px;
+                    
+                }
+
+                mat-button-toggle:hover{
+                    background-color: rgb(129, 129, 252);
+                }
+
+                mat-button-toggle:click{
+                    background-color: rgb(110, 110, 253);
+                }
+            }
+        }
+}

@@ -1,0 +1,9 @@
+.audience{
+    border: 1px solid grey;
+    text-align: center;
+    padding-bottom: 10px;
+
+    .mat-radio-button ~ .mat-radio-button {
+        margin-left: 16px;
+      }
+}

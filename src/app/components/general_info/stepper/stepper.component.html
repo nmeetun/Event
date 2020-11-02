@@ -1,0 +1,28 @@
+<mat-horizontal-stepper>
+    <mat-step label="General Information">
+        <app-category></app-category><br>
+        <app-public-private></app-public-private><br>
+        <app-date-time></app-date-time><br>
+        <app-eventtitle></app-eventtitle><br>
+        <app-aboutevent></app-aboutevent><br>
+        <app-eventpicture></app-eventpicture><br>
+        <button mat-raised-button color="primary" matStepperNext  (click)="saveEvent()" >Next</button>
+    </mat-step>
+    <mat-step label="Pricing and Location">
+        <app-location></app-location><br>
+        <app-price></app-price><br>
+        <button mat-raised-button color="primary" matStepperPrevious>Back</button>&nbsp;&nbsp;&nbsp;
+        <button mat-raised-button color="primary" matStepperNext  (click)="saveEvent()" >Next</button>
+    </mat-step>
+    <mat-step label="Additional Information">
+        <app-restrictions></app-restrictions><br>
+        <app-numberofpeople></app-numberofpeople><br>
+        <app-specialguests></app-specialguests><br>
+        <app-authorities></app-authorities>
+        <button mat-raised-button color="primary" matStepperPrevious>Back</button>&nbsp;&nbsp;&nbsp;
+        <button mat-raised-button color="primary" matStepperNext  (click)="saveEvent()" >Next</button>
+    </mat-step>
+    <mat-step label="Summary">
+        <app-eventsummary></app-eventsummary>
+    </mat-step>
+</mat-horizontal-stepper>

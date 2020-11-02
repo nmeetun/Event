@@ -1,0 +1,19 @@
+.specialguests{
+    border: 1px solid grey;
+    text-align: center;
+    padding-bottom: 10px;
+
+    button{
+        background-color: rgb(84, 84, 253);
+        color: white;
+    }
+
+    button:hover{
+        background-color: rgb(107, 107, 252);
+    }
+
+    button:click{
+        background-color: rgb(201, 201, 253);
+        border: none;
+    }
+}

@@ -1,0 +1,39 @@
+<div class="datetime">
+    <p>When will this Event be?</p><br>
+
+    <mat-form-field id="select">
+         <mat-label>Months</mat-label>
+         <mat-select>
+             <mat-option *ngFor="let month of months">{{month}}</mat-option>
+         </mat-select> 
+     </mat-form-field><br>
+
+     <mat-form-field id="select">
+         <mat-label>Every 1st day of the months</mat-label>
+         <mat-select>
+             <mat-option value="firstday">Every 1st day of the months</mat-option>
+             <mat-option value="weekdays">Weekdays</mat-option>
+             <mat-option value="saturdays">Every Saturdays</mat-option>
+             <mat-option value="">Every Sundays</mat-option>
+         </mat-select>
+     </mat-form-field><br><br><br>
+
+     <div class="input">
+        <mat-form-field id="calendar">
+            <mat-hint>Starts</mat-hint>
+           <input matInput [matDatepicker] = "myDatePicker"  [matDatepickerFilter]="dateFilter">
+           <mat-datepicker-toggle [for]="myDatePicker" matSuffix></mat-datepicker-toggle>
+           <mat-datepicker #myDatePicker></mat-datepicker>
+       </mat-form-field>&nbsp;&nbsp;
+   
+       <mat-form-field id="calendar">
+           <mat-hint>End by</mat-hint>
+          <input matInput [matDatepicker] = "myDatePicker"  [matDatepickerFilter]="dateFilter">
+          <mat-datepicker-toggle [for]="myDatePicker" matSuffix></mat-datepicker-toggle>
+          <mat-datepicker #myDatePicker></mat-datepicker>
+      </mat-form-field><br><br>
+   
+      <mat-hint>Time</mat-hint>
+      <input atp-time-picker>&nbsp;&nbsp;<input atp-time-picker><br>
+     </div><br>
+</div>

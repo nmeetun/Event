@@ -1,0 +1,24 @@
+<div class="specialguests">
+    How many special guesses will there be?
+    <div class="increment">
+        <button type="button" (click)="minus()"><i class="fa fa-minus">-</i></button>
+        <input type="text" [value]="quantity">
+        <button type="button" (click)="plus()"><i class="fa fa-plus-square">+</i></button>
+    </div><br><br> 
+
+    What are the names of your special guests?<br>
+    <input type="text"><br><br>
+    <input type="text"><br><br>
+
+    <p>Upload main image</p>
+
+    <div class="box">
+        <img [src]="url" height="80px" width="80px"><br>
+        <input type="file" (change)="onselectFile($event)" multiple>
+    </div><br><br>
+
+    <p>Any additional information?</p>
+    <input type="text">
+
+</div>
+
